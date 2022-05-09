@@ -1,0 +1,44 @@
+.footer{
+    background: $color-primary-dark-gray;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_container{
+    text-align: center;
+
+    .footer-logo{
+        margin-top: 3.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    ul{
+        margin-top: 1rem;
+        li{
+            padding-top: 1rem;
+
+            a{
+                font-family: $font-family-text;
+                font-size: .8rem;
+                text-transform: uppercase;
+                line-height: 0.876rem;
+                font-weight: 400;
+                letter-spacing: .13rem;
+            }
+        }
+    }
+
+    .socials{
+
+        ul{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+    }
+}

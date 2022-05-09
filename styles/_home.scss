@@ -1,0 +1,125 @@
+.home_hero{
+    margin-top: 1rem;
+}
+
+.home_cta{
+    margin-top: 1rem;
+}
+
+picture{
+    img{
+    width: 100%;
+    }
+}
+
+.head_text{
+  color: $color-primary-dark-gray;
+  font-family: $font-family-headings;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  letter-spacing: var(--letter-spacing-h1);
+  line-height: var(--line-height-h1);
+  padding-bottom: .2rem;
+}
+
+.home_about{
+    margin-top: 8rem;
+
+    .about_headline{
+        border-top: $separation-border;
+        padding-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .about_content{
+
+        .about_text{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .port_btn{
+         margin-top: .5rem;
+         border-bottom: $separation-border;
+         padding-bottom: 2rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .home_hero{
+        position: relative;
+
+    }
+
+    .home_cta{
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 17.3rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        max-width: 29rem;
+
+        .button{
+            position: inherit;
+            bottom: 0;
+        }
+    }
+
+    .home_about{
+    margin-top: 5rem;
+    position: relative;
+
+        .about_headline{
+            position: absolute;
+            padding-left: .5rem;
+            display: flex;
+            justify-content: flex-start;
+            top: 0;
+            right: 0;
+            margin-bottom: .5rem;
+            padding-top: 1.5rem;
+            border-top: $separation-border;
+            width: 50%;
+        }
+
+
+     .about_content{
+        display: flex;
+        align-items: center;
+        
+        
+
+            .lottie{
+            margin-top: 1.5rem;
+            flex: 1;
+            }  
+
+            .about_text{
+                margin-top: 5rem;
+                flex: 1;
+                padding-left: 1rem;
+                text-align: left;
+            }
+
+            
+        }
+
+        .port_btn{
+         margin-top: 1.1rem;
+        }
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .home_cta{
+        height: 20rem;
+        max-width: 30rem;
+    }
+}

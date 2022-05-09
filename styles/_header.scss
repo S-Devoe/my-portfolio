@@ -1,0 +1,117 @@
+.header{
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+ 
+
+  
+  @media screen and (min-width: 768px) {
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+
+    .hamburger_menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    p{
+        font-family: $font-family-text;
+        font-weight: 800;
+        font-size: 2.1rem;
+    }
+
+
+    .nav{
+        position: absolute;
+        background: $color-primary-dark-gray;
+        top: 2rem;
+        right: 0;
+
+        &.hide-nav{
+            display: none;
+        }
+
+        &show-nav{
+            display: flex;
+            
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 1.8rem 4rem;
+
+            li{
+                list-style-type: none;
+                padding-bottom: .6rem;
+                color: $color-secondary-very-light-gray;
+                a{
+                    
+                    font-size: 0.75rem;
+                    font-weight: $font-weight-semi-bold;
+                    letter-spacing: 0.125rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        
+    }
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .hamburger_menu{
+                display: none;
+        }
+
+         .nav{
+            position: unset;
+            background: transparent;
+            top: unset;
+            right: unset;
+
+            &.hide-nav{
+                display: block;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                margin: unset;
+
+                li{
+                    padding-left: 1.1rem;
+                    color: $color-primary-dark-gray;
+
+                    &.active{
+                     color: $color-primary-cyan;
+                    }
+
+                }
+            }
+        }
+   
+    }
+}
