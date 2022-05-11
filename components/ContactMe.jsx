@@ -7,7 +7,7 @@ function ContactMe() {
         Intrested in doing a project together?
       </h2>
       <div className="contact-me_cta">
-        <Link href="">
+        <Link href="/contact">
           <a className="button contact_me_button">Contact Me</a>
         </Link>
       </div>
