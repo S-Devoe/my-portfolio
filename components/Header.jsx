@@ -5,16 +5,19 @@ import {useRouter} from "next/router"
 
 function Header() {
   const[showMenu, setShowMenu] = useState(true)
-  const router = useRouter()
+  // const router = useRouter()
+  const { asPath } = useRouter()
 
-  console.log(router.pathname)
+  console.log(asPath)
+
+  // console.log(router.pathname)
 
   return (
     <header className="header">
       <div className="header_container">
         <Link href="/">
           <a className="header_logo">
-            <p>DV</p>
+            <p>dv</p>
           </a>
         </Link>
         <div className="hamburger_menu">
@@ -40,18 +43,18 @@ function Header() {
         </div>
         <nav className={`nav ${showMenu ? 'hide-nav' : 'show-nav'}`}>
           <ul>
-            <li className={`${router.pathname = "/" ? "active" : ""}`}>
+            <li className={`${asPath === "/" ? "active" : ""}`}>
               <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
-            <li className={`${router.pathname === "/portfolio" ? "active" : ""}`}>
+            <li className={`${asPath === "/portfolio" ? "active" : ""}`}>
               <Link href="/">
                 <a>Portfolio</a>
               </Link>
             </li>
-            <li className={`${router.pathname === "/contact" ? "active" : ""}`}>
-              <Link href="/">
+            <li className={`${asPath === "/contact" ? "active" : ""}`}>
+              <Link href="/contact">
                 <a>Contact me</a>
               </Link>
             </li>

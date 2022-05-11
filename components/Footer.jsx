@@ -4,29 +4,32 @@ import Image from "next/image"
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer_container">
-        <div className="footer-logo">
-          <Link href="/">
-            <a className="logo">DV</a>
-          </Link>
-        </div>
-        <ul>
-          <li>
+      <div className="footer_container wrapper">
+        <div className="footer_nav_item">
+          <div className="footer-logo">
             <Link href="/">
-              <a>Home</a>
+              <a className="logo">dv</a>
             </Link>
-          </li>
-          <li>
-            <Link href="/portfolio">
-              <a>Portfolio</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <a>Contact Me</a>
-            </Link>
-          </li>
-        </ul>
+          </div>
+
+          <ul>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/portfolio">
+                <a>Portfolio</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact">
+                <a>Contact Me</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div className="socials">
           <ul>
             <li>

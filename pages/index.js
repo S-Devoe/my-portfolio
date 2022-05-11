@@ -10,6 +10,12 @@ export default function Home() {
     <>
       <Head>
         <title>DeeVoe | Portfolio</title>
+        <link
+          rel="preload"
+          href="/REZ.ttf"
+          as="font"
+          crossOrigin="anonymous"
+        />
         <meta name="description" content="Lagbalu Lateef" />
         <meta name="description" content="DeeVoe" />
         <meta name="keywords" content="portfolio" />
@@ -34,10 +40,10 @@ export default function Home() {
             />
           </picture>
           <div className="home_cta">
-            <p className="head_text">
+            <h1 className="head_text">
               Hey, I&apos;m Lagbalu Lateef and I love building & designing
               beautiful websites
-            </p>
+            </h1>
             <a href="#about" className="button button-primary">
               About me
             </a>

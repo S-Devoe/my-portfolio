@@ -1,8 +1,12 @@
-
+@font-face {
+    font-family: "REZ";
+    src: url('../public/REZ.ttf')  format('truetype');
+}
 
 @import "variable";
 @import "base";
 @import "header";
 @import "home";
 @import "contact-cta";
+@import "contact-me";
 @import "footer";
