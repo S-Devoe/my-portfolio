@@ -114,8 +114,14 @@
                     padding-left: 1.1rem;
                     color: $color-primary-dark-gray;
 
+                    &:hover{
+                          color: $color-primary-cyan;
+                          transition: all .25s linear;
+                    }
+
                     &.active{
                      color: $color-primary-cyan;
+                     transition: all .25s ease-in-out;
                     }
 
                 }

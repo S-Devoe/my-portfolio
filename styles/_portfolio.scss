@@ -1,0 +1,181 @@
+// PORTFOLIO INDEX PAGE
+
+.portfolio {
+  margin-top: 3rem;
+
+  article {
+    .portfolio_details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image_container {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        max-height: 40rem;
+      }
+    }
+
+    .portfolio_summary {
+      border-top: $separation-border;
+      border-bottom: $separation-border;
+      margin-top: 2rem;
+      margin-bottom: 2.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+
+      h2 {
+        text-transform: capitalize;
+      }
+
+      p {
+        font-size: $font-size-text-body2;
+        margin-top: 1.5rem;
+      }
+
+      .button {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 4.875rem;
+
+    article {
+      .portfolio_details {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+      }
+
+      .image_container {
+        flex: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          max-height: 40rem;
+        }
+      }
+
+      .portfolio_summary {
+        flex: 1;
+        margin-bottom: unset;
+        margin-left: 5.625rem;
+        margin-top: 0;
+        padding-bottom: 3.125rem;
+        padding-top: 3rem;
+
+        .button {
+          margin-top: 2.5rem;
+        }
+      }
+
+      &:nth-of-type(2n) {
+        .portfolio_details {
+          display: flex;
+          flex-direction: row-reverse;
+        }
+
+        .portfolio_summary {
+          flex: 1;
+          margin-bottom: unset;
+          margin-right: 5.625rem;
+          margin-left: 0;
+          margin-top: 0;
+          padding-bottom: 3.125rem;
+          padding-top: 3rem;
+        }
+      }
+    }
+  }
+}
+
+// SLUG
+
+.portfolio_slug_detail {
+  margin-top: 2.5rem;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5.875rem;
+  }
+
+  .images {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: 48rem;
+    }
+  }
+
+  .project_info {
+    margin-top: 1rem;
+    .project_intro {
+      border-bottom: $separation-border;
+      border-top: $separation-border;
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+
+      h2 {
+        text-transform: capitalize;
+      }
+
+      .project_intro_description {
+        font-size: $font-size-text-body2;
+        margin-top: 1.5rem;
+      }
+
+      .project_tags {
+        margin-top: 1.5rem;
+
+        p {
+          color: $color-tag-text;
+          font-size: var(--font-size-tag-text);
+          font-weight: $font-weight-tag-text;
+        }
+      }
+
+      .link_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        gap: 1rem;
+
+        .button{
+            display: flex;
+            align-items: center;
+            align-self: center;
+        }
+
+        .github_button {
+            svg{
+                margin-top: .5rem;
+            }
+          display: flex;
+          gap: .5rem;
+          align-items: center;
+          background-color: $color-primary-dark-gray;
+          color: #fff;
+        //   display: inline-flex;
+          font-size: $btn-font-size;
+          font-weight: $btn-font-weight;
+          justify-content: center;
+          letter-spacing: $btn-letter-spacing;
+          min-height: 3rem;
+          min-width: 10.125rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

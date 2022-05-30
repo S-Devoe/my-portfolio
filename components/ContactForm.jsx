@@ -6,8 +6,8 @@ function ContactForm() {
   const{register, handleSubmit,reset, formState:{errors}} = useForm()
   const formRef = useRef()
 
-  const sendEmail = (e,formData) => {
-    // e.preventDefault()
+  const sendEmail = (formData, e) => {
+    
     emailjs
       .sendForm(
         "service_8hxf061",
@@ -24,7 +24,8 @@ function ContactForm() {
         }
       );
       reset()
-      // e.target.reset()
+      e.preventDefault()
+      
     // return false;
   }
   return (
