@@ -3,9 +3,10 @@ import Link from "next/link"
 import { useState } from "react"
 import {useRouter} from "next/router"
 import {projects} from '../data/projects'
+import { set } from "react-hook-form"
 
 function Header() {
-  const[showMenu, setShowMenu] = useState(true)
+  const[showMenu, setShowMenu] = useState(false)
   // const router = useRouter()
   const { asPath } = useRouter()
   const {query}= useRouter()
@@ -29,7 +30,7 @@ function Header() {
           {showMenu ? (
             <div className="" onClick={() => setShowMenu((prev) => !prev)}>
               <Image
-                src="/images/icons/hamburger.svg"
+                src="/images/icons/close.svg"
                 alt="hamburger"
                 height="20px"
                 width="25px"
@@ -38,7 +39,7 @@ function Header() {
           ) : (
             <div className="" onClick={() => setShowMenu((prev) => !prev)}>
               <Image
-                src="/images/icons/close.svg"
+                src="/images/icons/hamburger.svg"
                 alt="hamburger"
                 height="20px"
                 width="25px"
@@ -46,9 +47,12 @@ function Header() {
             </div>
           )}
         </div>
-        <nav className={`nav ${showMenu ? "hide-nav" : "show-nav"}`}>
+        <nav className={`nav ${showMenu ? "show-nav" : "hide-nav"}`}>
           <ul>
-            <li className={`${asPath === "/" ? "active" : ""}`}>
+            <li
+              className={`${asPath === "/" ? "active" : ""}`}
+              onClick={() => setShowMenu(false)}
+            >
               <Link href="/">
                 <a>Home</a>
               </Link>
@@ -56,12 +60,16 @@ function Header() {
             <li
               className={`${asPath == "/portfolio" ? "active" : ""} 
               ${asPath == `/portfolio/${query.slug}` ? "active" : null} `}
+              onClick={() => setShowMenu(false)}
             >
               <Link href="/portfolio">
                 <a>Portfolio</a>
               </Link>
             </li>
-            <li className={`${asPath === "/contact" ? "active" : ""}`}>
+            <li
+              className={`${asPath === "/contact" ? "active" : ""}`}
+              onClick={() => setShowMenu(false)}
+            >
               <Link href="/contact">
                 <a>Contact me</a>
               </Link>
