@@ -30,7 +30,7 @@ const Portfolio = () => {
             <div className="portfolio_details">
               <div className="image_container">
                 {/* eslint-disable-next-line */}
-                <img src="./portf/netflix-clone.png" alt="netflix clone" />
+                <img src="./portf/netflix.jpg" alt="netflix clone" />
               </div>
 
               <div className="portfolio_summary">
