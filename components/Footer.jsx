@@ -33,7 +33,7 @@ function Footer() {
         <div className="socials">
           <ul>
             <li>
-              <a href="https://github.com/S-Devoe" title="github">
+              <a href="https://github.com/S-Devoe" title="github" target="_blank" rel="noreferrer">
                 <Image
                   src="/images/icons/github.svg"
                   alt="github"
@@ -43,7 +43,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/hol_segun" title="twitter">
+              <a href="https://twitter.com/hol_segun" title="twitter" target="_blank" rel="noreferrer">
                 <Image
                   src="/images/icons/twitter.svg"
                   alt="twitter"
