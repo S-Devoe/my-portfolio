@@ -1,9 +1,10 @@
-export const projects = {
-  audiophile: {
+const projects = [
+  {
+    id: 0,
     name: "Audiophile Ecommerce",
     slug: "audiophile",
     excerpt:
-      "This project was a multpage project that required me to build a fully responsive website using NextJS, SASS, React-Redux. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+      "This project was a multpage project that required me to build a fully responsive website using NextJS, SASS, Typescript and React-Redux. I had mobile and desktop designs to work to, and build it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
     description:
       'This project was a front-end challenge from <a href="https://www.frontendmentor.io">Frontend Mentor</a>. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
     roles: ["Interaction Design", "Front End Development"],
@@ -11,11 +12,14 @@ export const projects = {
     websiteUrl: "#",
     githubUrl: "#",
     previousProject: "Room Homepage",
+    previousProjectSlug: "room-homepage",
     nextProject: "Space Tourism",
+    nextProjectSlug: "space-tourism",
   },
-  space: {
+  {
+    id: 1,
     name: "Space Tourism",
-    slug: "space",
+    slug: "space-tourism",
     excerpt:
       "This was a multipage project that required me to build a fully responsive website with the design file (Figma file) provided. I used ReactJS, along with Styled Components to complete this challenge.",
     description:
@@ -25,11 +29,15 @@ export const projects = {
     websiteUrl: "#",
     githubUrl: "#",
     nextProject: "Netflix Clone",
-    previousProject: "Room Homepage",
+    nextProjectSlug: "netflix-clone",
+    previousProject: "Audiophile",
+    previousProjectSlug: "audiophile",
   },
-  netflix: {
+
+  {
+    id: 2,
     name: "Netflix Clone",
-    slug: "netflix",
+    slug: "netflix-clone",
     excerpt:
       "In this project I cloned and built a responsive Netflix website using NextJS, Tailwind CSS, Typescript, and Firebase for authentication.",
     description:
@@ -39,11 +47,15 @@ export const projects = {
     websiteUrl: "#",
     githubUrl: "#",
     previousProject: "Space Tourism",
+    previousProjectSlug: "space-tourism",
     nextProject: "Room Homepage",
+    nextProjectSlug: "room-homepage",
   },
-  roomHomepage: {
+
+  {
+    id: 3,
     name: "Room Homepage",
-    slug: "room",
+    slug: "room-homepage",
     excerpt:
       "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.",
     description:
@@ -52,7 +64,11 @@ export const projects = {
     languages: ["HTML5", "CSS", "ReactJS", "React Responsive"],
     websiteUrl: "#",
     githubUrl: "#",
-    previousProject: "Bookmark",
-    nextProject: "Fylo",
+    previousProject: "Netflix Clone",
+    previousProjectSlug: "netflix-clone",
+    nextProject: "Audiophile",
+    nextProjectSlug: "audiophile",
   },
-};
+];
+
+export default projects;

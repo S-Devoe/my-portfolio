@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import ContactMe from "../../components/ContactMe";
-import { projects } from "../../data/projects";
+// import { projects } from "../../data/projects";
+import projects from "../../data/projects";
+
 
 const PortfolioSlug = ({ project }) => {
   return (
@@ -13,7 +16,7 @@ const PortfolioSlug = ({ project }) => {
         <div className="portfolio_slug_detail">
           <div className="images">
             {/* eslint-disable-next-line */}
-            <img src={`/portf/${project.slug}.jpg`} alt={project.name} />
+            <img src={`/portf/${project.slug}-image.jpg`} alt={project.name} />
           </div>
 
           <div className="project_info">
@@ -28,7 +31,9 @@ const PortfolioSlug = ({ project }) => {
               <div className="link_buttons">
                 {/* live website */}
                 <Link href={project.websiteUrl} passHref>
-                  <a className="button">Visit Website</a>
+                  <a className="button" target="_blank">
+                    Visit Website
+                  </a>
                 </Link>
                 {/* github */}
                 <Link href={project.githubUrl}>
@@ -65,9 +70,15 @@ const PortfolioSlug = ({ project }) => {
         </div>
         <div className="project_pagination">
           <div className="previousProject">
+            <Image
+              src="/images/icons/arrow-left.svg"
+              alt="left direction arrow"
+              width={10}
+              height={16}
+            />
             <Link
               href={`/portfolio/[slug]`}
-              as={`/portfolio/${project.previousProject.toLowerCase()}`}
+              as={`/portfolio/${project.previousProjectSlug.toLowerCase()}`}
             >
               <a className="portfolio_pagination_previous">
                 <p className="portfolio_pagination_title">
@@ -78,9 +89,11 @@ const PortfolioSlug = ({ project }) => {
                 </p>
               </a>
             </Link>
+          </div>
+          <div className="nextProject">
             <Link
               href={`/portfolio/[slug]`}
-              as={`/portfolio/${project.nextProject.toLowerCase()}`}
+              as={`/portfolio/${project.nextProjectSlug.toLowerCase()}`}
             >
               <a className="portfolio_pagination_next">
                 <p className="portfolio_pagination_title">
@@ -89,6 +102,12 @@ const PortfolioSlug = ({ project }) => {
                 <p className="portfolio_pagination_direction">Next Project</p>
               </a>
             </Link>
+            <Image
+              src="/images/icons/arrow-right.svg"
+              alt="righy direction arrow"
+              width={10}
+              height={16}
+            />
           </div>
         </div>
         <ContactMe />
@@ -101,10 +120,14 @@ export default PortfolioSlug;
 
 // Pre-render the project detail pages during build
 export const getStaticPaths = async () => {
-  const paths = Object.keys(projects).map((projectSlug) => ({
-    params: { slug: projectSlug },
-  }));
-  // console.log(paths);
+ 
+  const paths = projects.map((project) => (
+    {
+      params: {slug: project.slug}
+    }
+  ))
+
+  console.log(paths)
 
   return {
     paths,
@@ -115,11 +138,11 @@ export const getStaticPaths = async () => {
 // Get the data for the project detail pages during build
 
 export const getStaticProps = async ({ params }) => {
-  const project = projects[params.slug];
+  const project = projects.filter((project) => project.slug === params.slug)
 
-  // console.log(project);
+  console.log(project);
 
   return {
-    props: { project: project },
+    props: { project: project[0] },
   };
 };

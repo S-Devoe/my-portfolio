@@ -102,10 +102,6 @@
 .portfolio_slug_detail {
   margin-top: 2.5rem;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 5.875rem;
-  }
-
   .images {
     width: 100%;
 
@@ -151,22 +147,22 @@
         margin-top: 1.5rem;
         gap: 1rem;
 
-        .button{
-            display: flex;
-            align-items: center;
-            align-self: center;
+        .button {
+          display: flex;
+          align-items: center;
+          align-self: center;
         }
 
         .github_button {
-            svg{
-                margin-top: .5rem;
-            }
+          svg {
+            margin-top: 0.5rem;
+          }
           display: flex;
-          gap: .5rem;
+          gap: 0.5rem;
           align-items: center;
           background-color: $color-primary-dark-gray;
           color: #fff;
-        //   display: inline-flex;
+          //   display: inline-flex;
           font-size: $btn-font-size;
           font-weight: $btn-font-weight;
           justify-content: center;
@@ -178,4 +174,135 @@
       }
     }
   }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5.875rem;
+
+    .project_info {
+      .project_intro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.85rem;
+
+        .project_intro_description {
+          font-size: 1rem;
+          align-self: center;
+          grid-column: 2/-1;
+          margin-top: 0;
+          grid-row: 1/4;
+        }
+
+        .project_tags {
+          margin-top: unset;
+        }
+
+        .link_buttons {
+            margin-top: 1rem;
+          flex-direction: row;
+          justify-content: flex-start;
+          .button {
+            align-self: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+.project_background {
+  margin-top: 3rem;
+
+  h3 {
+    margin-top: 2.5rem;
+  }
+
+  p {
+    font-size: $font-size-text-body2;
+    margin-top: 1.5rem;
+  }
+}
+
+.project_pagination {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $separation-border;
+  border-top: $separation-border;
+  padding: 1.625rem 0;
+  margin-top: 4rem;
+
+  @media screen and (min-width:756px){
+      width: 100%;
+      padding: 0 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 4rem;
+  }
+
+  .portfolio_pagination_title {
+    color: $color-primary-dark-gray;
+    font-family: $font-family-headings;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-h3);
+    letter-spacing: var(--letter-spacing-h3);
+    line-height: var(--line-height-h3);
+
+    @media screen and (min-width:756px){
+      font-size: 1.8rem;
+    }
+  }
+
+  .portfolio_pagination_direction {
+    color: rgba(51, 50, 62, 0.5);
+    font-size: $font-size-text-body1;
+  }
+
+  .portfolio_pagination_previous,
+  .portfolio_pagination_next {
+    &:hover * {
+      color: $color-primary-cyan;
+    }
+  }
+
+  .portfolio_pagination_previous {
+    border-right: $separation-border;
+    flex: 1;
+
+    @media screen and (min-width: 756px){
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    p {
+      padding-right: 1rem;
+    }
+  }
+
+  .portfolio_pagination_next {
+    flex: 1;
+    justify-self: end;
+    align-self: flex-end;
+
+    @media screen and (min-width:756px){
+            flex:1;
+            width: 100%;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+    }
+
+    p {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.previousProject,
+.nextProject {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nextProject {
+  text-align: right;
 }
