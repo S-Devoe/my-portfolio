@@ -60,13 +60,13 @@ export default function Home() {
               <p>
                 I&apos;m a junior frontend developer and a UI/UX designer
                 looking for a new role in an exciting company. I design and
-                build websites using mordern tools like Figma, Adode Xd, HTML,
-                CSS, JavaScript, ReactJS and NextJS. I mostly use React, but i
+                build websites using modern tools like Figma, Adode Xd, HTML,
+                CSS, JavaScript, ReactJS and NextJS. I mostly use React, but I
                 can adapt to whatever tools are required. I&apos;m based in
                 Lagos, Nigeria, but I&apos;m happy working remotely and have
                 experience in remote teams. When I am not coding, you&apos;ll
                 find me reading and learning something new. I&apos;d love you to
-                checek out my work
+                check out my work
               </p>
               <div className="port_btn">
                 <Link href="/portfolio">
