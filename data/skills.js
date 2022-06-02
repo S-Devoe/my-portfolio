@@ -46,21 +46,26 @@ const skills = [
   },
   {
     id: 9,
+    name: "Redux",
+    image: "/skills/redux.svg",
+  },
+  {
+    id: 10,
     name: "NextJS",
     image: "/skills/nextjs.svg",
   },
   {
-    id: 10,
+    id: 11,
     name: "Firebase",
     image: "/skills/firebase.svg",
   },
   {
-    id: 11,
+    id: 12,
     name: "Figma",
     image: "/skills/figma.svg",
   },
   {
-    id: 12,
+    id: 13,
     name: "Adode XD",
     image: "/skills/adobe-xd.svg",
   },
