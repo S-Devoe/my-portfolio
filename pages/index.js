@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CodingLottie from "../components/CodingLottie";
 import ContactMe from "../components/ContactMe";
+import Skills from "../components/Skills";
 
 
 export default function Home() {
@@ -74,6 +75,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="skill_section">
+          <Skills />
         </div>
         <ContactMe />
       </main>
