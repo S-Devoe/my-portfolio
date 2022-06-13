@@ -58,7 +58,7 @@ export default function Home() {
             </div>
             <div className="about_text">
               <p>
-                I&apos;m a junior frontend developer and a UI/UX designer
+                I&apos;m a frontend developer and a UI/UX designer
                 looking for a new role in an exciting company. I design and
                 build websites using modern tools like Figma, Adode Xd, HTML,
                 CSS, JavaScript, ReactJS and NextJS. I mostly use React, but I
