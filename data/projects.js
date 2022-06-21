@@ -13,11 +13,28 @@ const projects = [
     githubUrl: "https://github.com/S-Devoe/audiophile-ecommerce.git",
     previousProject: "Room Homepage",
     previousProjectSlug: "room-homepage",
-    nextProject: "Space Tourism",
-    nextProjectSlug: "space-tourism",
+    nextProject: "Countries",
+    nextProjectSlug: "rest-countries",
   },
   {
     id: 1,
+    name: "Countries",
+    slug: "rest-countries",
+    excerpt:
+      "In this project, I built and develed a website that displays and show details about countries on planet earth.",
+    description:
+      "This project required me to fetch data from the REST Countries API, and then use this data to develop a functional and responsive website where users can search for a country, filter countries by their region, click on a country's card to see more details about it, and also check through to the border countries from the detail page.  Creating this project helped me to sharpen my coding and problem solving skills. ",
+    roles: ["Interaction Design", "Front End Development"],
+    languages: ["HTML5", "SCSS", "Next.JS", "React", "Typescript", "REST API"],
+    websiteUrl: "https://fe-rest-country-api.vercel.app/",
+    githubUrl: "https://github.com/S-Devoe/rest-country-api.git",
+    nextProject: "Space Tourism",
+    nextProjectSlug: "space-tourism",
+    previousProject: "Audiophile",
+    previousProjectSlug: "audiophile",
+  },
+  {
+    id: 2,
     name: "Space Tourism",
     slug: "space-tourism",
     excerpt:
@@ -30,12 +47,12 @@ const projects = [
     githubUrl: "https://github.com/S-Devoe/space-tourism.git",
     nextProject: "Netflix Clone",
     nextProjectSlug: "netflix-clone",
-    previousProject: "Audiophile",
-    previousProjectSlug: "audiophile",
+    previousProject: "Countries",
+    previousProjectSlug: "rest-countries",
   },
 
   {
-    id: 2,
+    id: 3,
     name: "Netflix Clone",
     slug: "netflix-clone",
     excerpt:
@@ -53,14 +70,14 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     name: "Room Homepage",
     slug: "room-homepage",
     excerpt:
       "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.",
     description:
       'This project was a front-end challenge from <a href="https://www.frontendmentor.io">Frontend Mentor</a>. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
-    roles: ["Interaction Design", "Front End Development"],
+    roles: ["Front End Development"],
     languages: ["HTML5", "CSS", "ReactJS", "React Responsive"],
     websiteUrl: "https://room-homepage-s-devoe.vercel.app/",
     githubUrl: "https://github.com/S-Devoe/room-homepage.git",

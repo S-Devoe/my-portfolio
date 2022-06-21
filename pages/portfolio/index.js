@@ -31,6 +31,33 @@ const Portfolio = () => {
               </div>
             </div>
           </article>
+          <article className="rest_countries">
+            <div className="portfolio_details">
+              <div className="image_container">
+                {/* eslint-disable-next-line */}
+                <img
+                  src="./portf/rest-countries-image.jpg"
+                  alt="rest countries"
+                />
+              </div>
+
+              <div className="portfolio_summary">
+                <h2>Countries </h2>
+                <p>
+                  This project required me to fetch data from the REST Countries
+                  API, and then use this data to develop a functional and
+                  responsive website where users can search for a country,
+                  filter countries by their region, click on a country&apos;s card to
+                  see more details about it, and also check through to the
+                  border countries from the detail page. Creating this project
+                  helped me to sharpen my coding and problem solving skills.
+                </p>
+                <Link href="/portfolio/[slug]" as="/portfolio/rest-countries">
+                  <a className="button">View Project</a>
+                </Link>
+              </div>
+            </div>
+          </article>
           <article className="space_tourism">
             <div className="portfolio_details">
               <div className="image_container">

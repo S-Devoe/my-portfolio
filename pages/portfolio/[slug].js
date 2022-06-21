@@ -31,13 +31,13 @@ const PortfolioSlug = ({ project }) => {
               <div className="link_buttons">
                 {/* live website */}
                 <Link href={project.websiteUrl} passHref>
-                  <a className="button" target="_blank">
+                  <a className="button" target="_blank" >
                     Visit Website
                   </a>
                 </Link>
                 {/* github */}
                 <Link href={project.githubUrl}>
-                  <a className="github_button">
+                  <a className="github_button" target="_blank">
                     <div className="svg">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
