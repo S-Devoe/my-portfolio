@@ -20,10 +20,11 @@ picture{
   letter-spacing: var(--letter-spacing-h1);
   line-height: var(--line-height-h1);
   padding-bottom: .2rem;
+  margin-bottom: 1rem;
 }
 
 .home_about{
-    margin-top: 8rem;
+    margin-top: 4rem;
 
     .about_headline{
         border-top: $separation-border;
