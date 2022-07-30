@@ -1,23 +1,44 @@
 const projects = [
   {
     id: 0,
+    name: "Invoice App",
+    slug: "invoice-app",
+    excerpt:
+      "This project is a multipage project that required me to build a fully responsive web-app that can be used to create and store invoices. I built this using React.JS, Styled Components, Typescript and Firebase for my authentication and database, I made sure the web-app is fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+    description: `This project was a front-end challenge from <a href="https://www.frontendmentor.io">Frontend Mentor</a>. I took the project up so as to test and practice my Backend knowledge using firebase.The web-app requires users to sign up before they can be allowed to store data. Users can test the app by logging in anonymously, but can't modify any of the dummy data`,
+    roles: [
+      "Interaction Design",
+      "Front End Development",
+      "Backend Development ",
+      "Firebase",
+    ],
+    languages: ["HTML5", "Styled Components", "React.JS", "Typescript"],
+    websiteUrl: "https://invoice-app-fullstack.vercel.app/",
+    githubUrl: "https://github.com/S-Devoe/invoice-app-fullstack.git",
+    previousProject: "Room Homepage",
+    previousProjectSlug: "room-homepage",
+    nextProject: "Audiophile",
+    nextProjectSlug: "audiophile",
+  },
+  {
+    id: 1,
     name: "Audiophile Ecommerce",
     slug: "audiophile",
     excerpt:
-      "This project was a multpage project that required me to build a fully responsive website using NextJS, SASS, Typescript and React-Redux. I had mobile and desktop designs to work to, and build it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+      "This project was a multipage project that required me to build a fully responsive website using NextJS, SASS, Typescript and React-Redux. I had mobile and desktop designs to work to, and build it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
     description:
       'This project was a front-end challenge from <a href="https://www.frontendmentor.io">Frontend Mentor</a>. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
     roles: ["Interaction Design", "Front End Development"],
     languages: ["HTML5", "SCSS", "NextJS"],
     websiteUrl: "https://audiophile-ecommerce-nextjs.vercel.app/",
     githubUrl: "https://github.com/S-Devoe/audiophile-ecommerce.git",
-    previousProject: "Room Homepage",
-    previousProjectSlug: "room-homepage",
+    previousProject: "Invoice App",
+    previousProjectSlug: "invoice-app",
     nextProject: "Countries",
     nextProjectSlug: "rest-countries",
   },
   {
-    id: 1,
+    id: 2,
     name: "Countries",
     slug: "rest-countries",
     excerpt:
@@ -34,7 +55,7 @@ const projects = [
     previousProjectSlug: "audiophile",
   },
   {
-    id: 2,
+    id: 3,
     name: "Space Tourism",
     slug: "space-tourism",
     excerpt:
@@ -52,7 +73,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     name: "Netflix Clone",
     slug: "netflix-clone",
     excerpt:
@@ -70,7 +91,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: "Room Homepage",
     slug: "room-homepage",
     excerpt:

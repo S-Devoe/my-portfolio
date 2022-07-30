@@ -5,6 +5,30 @@ const Portfolio = () => {
     <main>
       <section className="wrapper">
         <div className="portfolio">
+          <article className="invoice-app">
+            <div className="portfolio_details">
+              <div className="image_container">
+                {/* eslint-disable-next-line */}
+                <img src="./portf/invoice-app-image.jpg" alt="invoice app" />
+              </div>
+
+              <div className="portfolio_summary">
+                <h2>Invoice App</h2>
+                <p>
+                  This project is a multipage project that required me to build
+                  a fully responsive web-app that can be used to create and
+                  store invoices. I built this using React.JS, Styled
+                  Components, Typescript and Firebase for my authentication and
+                  database, I made sure the web-app is fully-responsive. I took
+                  a mobile-first approach and used modern CSS like Flexbox and
+                  Grid for layout purposes.
+                </p>
+                <Link href="/portfolio/[slug]" as="/portfolio/invoice-app">
+                  <a className="button">View Project</a>
+                </Link>
+              </div>
+            </div>
+          </article>
           <article className="audiophile">
             <div className="portfolio_details">
               <div className="image_container">
@@ -18,7 +42,7 @@ const Portfolio = () => {
               <div className="portfolio_summary">
                 <h2>Audiophile Ecommerce</h2>
                 <p>
-                  This project was a multpage project that required me to build
+                  This project is a multipage project that required me to build
                   a fully responsive website using NextJS, SASS, Typescript and
                   React-Redux. I had mobile and desktop designs to work to, and
                   build it so that it was fully-responsive. I took a
@@ -47,10 +71,11 @@ const Portfolio = () => {
                   This project required me to fetch data from the REST Countries
                   API, and then use this data to develop a functional and
                   responsive website where users can search for a country,
-                  filter countries by their region, click on a country&apos;s card to
-                  see more details about it, and also check through to the
-                  border countries from the detail page. Creating this project
-                  helped me to sharpen my coding and problem solving skills.
+                  filter countries by their region, click on a country&apos;s
+                  card to see more details about it, and also check through to
+                  the border countries from the detail page. Creating this
+                  project helped me to sharpen my coding and problem solving
+                  skills.
                 </p>
                 <Link href="/portfolio/[slug]" as="/portfolio/rest-countries">
                   <a className="button">View Project</a>

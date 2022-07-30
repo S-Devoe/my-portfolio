@@ -127,7 +127,7 @@ export const getStaticPaths = async () => {
     }
   ))
 
-  console.log(paths)
+  // console.log(paths)
 
   return {
     paths,
@@ -140,7 +140,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   const project = projects.filter((project) => project.slug === params.slug)
 
-  console.log(project);
+  // console.log(project);
 
   return {
     props: { project: project[0] },
