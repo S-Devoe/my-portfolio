@@ -69,6 +69,11 @@ const skills = [
     name: "Adode XD",
     image: "/skills/adobe-xd.svg",
   },
+  {
+    id: 14,
+    name: "Sanity CMS",
+    image: "/skills/sanity.svg",
+  },
 ];
 
 export default skills
