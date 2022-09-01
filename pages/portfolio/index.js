@@ -5,6 +5,29 @@ const Portfolio = () => {
     <main>
       <section className="wrapper">
         <div className="portfolio">
+          <article className="entertainment-app">
+            <div className="portfolio_details">
+              <div className="image_container">
+                {/* eslint-disable-next-line */}
+                <img src="./portf/entertainment-app-image.jpg" alt="entertainment app" />
+              </div>
+
+              <div className="portfolio_summary">
+                <h2>Entertainment App</h2>
+                <p>
+                  This project is a multipage project that required me to build
+                  a web app where users can search and view details of movies
+                  and tv series. I built this using Next.js, Tailwind CSS, TMDB
+                  REST API. I made sure the web-app is fully-responsive. I took
+                  a mobile-first approach and used modern CSS like Flexbox and
+                  Grid for layout purposes.
+                </p>
+                <Link href="/portfolio/[slug]" as="/portfolio/entertainment-app">
+                  <a className="button">View Project</a>
+                </Link>
+              </div>
+            </div>
+          </article>
           <article className="invoice-app">
             <div className="portfolio_details">
               <div className="image_container">

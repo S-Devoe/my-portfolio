@@ -61,7 +61,7 @@ export default function Home() {
                 I&apos;m a frontend developer and a UI/UX designer
                 looking for a new role in an exciting company. I design and
                 build websites using modern tools like Figma, Adode Xd, HTML,
-                CSS, JavaScript, ReactJS and NextJS. I mostly use React, but I
+                CSS, JavaScript, ReactJS and NextJS. I mostly use Next.js(a React.js framework), but I
                 can adapt to whatever tools are required. I&apos;m based in
                 Lagos, Nigeria, but I&apos;m happy working remotely and have
                 experience in remote teams. When I am not coding, you&apos;ll

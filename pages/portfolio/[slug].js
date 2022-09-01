@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import ContactMe from "../../components/ContactMe";
-// import { projects } from "../../data/projects";
 import projects from "../../data/projects";
 
 
@@ -140,7 +139,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   const project = projects.filter((project) => project.slug === params.slug)
 
-  // console.log(project);
+  console.log(project);
 
   return {
     props: { project: project[0] },

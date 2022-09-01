@@ -1,6 +1,22 @@
 const projects = [
   {
     id: 0,
+    name: "Entertainment App",
+    slug: "entertainment-app",
+    excerpt:
+      "This project is a multipage project that required me to build a web app where users can search and view details of movies and tv series. I built this using Next.js, Tailwind CSS, TMDB REST API. I made sure the web-app is fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+    description: `The main purpose of me building this web app was to improve my knowledge of fetching and handling data from an API, and also to increase my familiarity with Next.js.`,
+    roles: ["Interaction Design", "Front End Development", "REST API", "TMDB"],
+    languages: ["HTML5", "CSS", "Tailwind CSS", "Next.js", "JavaScript"],
+    websiteUrl: "https://movie-informations-webapp.vercel.app/",
+    githubUrl: "https://github.com/S-Devoe/movie-informations-webapp.git",
+    previousProject: "Room Homepage",
+    previousProjectSlug: "room-homepage",
+    nextProject: "Invoice App",
+    nextProjectSlug: "invoice-app",
+  },
+  {
+    id: 1,
     name: "Invoice App",
     slug: "invoice-app",
     excerpt:
@@ -15,13 +31,13 @@ const projects = [
     languages: ["HTML5", "Styled Components", "React.JS", "Typescript"],
     websiteUrl: "https://invoice-app-fullstack.vercel.app/",
     githubUrl: "https://github.com/S-Devoe/invoice-app-fullstack.git",
-    previousProject: "Room Homepage",
-    previousProjectSlug: "room-homepage",
+    previousProject: "Entertainment App",
+    previousProjectSlug: "entertainment-app",
     nextProject: "Audiophile",
     nextProjectSlug: "audiophile",
   },
   {
-    id: 1,
+    id: 2,
     name: "Audiophile Ecommerce",
     slug: "audiophile",
     excerpt:
@@ -38,7 +54,7 @@ const projects = [
     nextProjectSlug: "rest-countries",
   },
   {
-    id: 2,
+    id: 3,
     name: "Countries",
     slug: "rest-countries",
     excerpt:
@@ -55,7 +71,7 @@ const projects = [
     previousProjectSlug: "audiophile",
   },
   {
-    id: 3,
+    id: 4,
     name: "Space Tourism",
     slug: "space-tourism",
     excerpt:
@@ -73,7 +89,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: "Netflix Clone",
     slug: "netflix-clone",
     excerpt:
@@ -91,7 +107,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Room Homepage",
     slug: "room-homepage",
     excerpt:
@@ -104,8 +120,8 @@ const projects = [
     githubUrl: "https://github.com/S-Devoe/room-homepage.git",
     previousProject: "Netflix Clone",
     previousProjectSlug: "netflix-clone",
-    nextProject: "Audiophile",
-    nextProjectSlug: "audiophile",
+    nextProject: "Entertainment App",
+    nextProjectSlug: "entertainment-app",
   },
 ];
 
