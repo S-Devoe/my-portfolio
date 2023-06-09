@@ -1,13 +1,18 @@
-import { useForm} from 'react-hook-form'
-import emailjs from 'emailjs-com'
-import {useRef} from 'react'
+import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
+import { useRef, useState } from "react";
+import toast from "react-hot-toast";
 
 function ContactForm() {
-  const{register, handleSubmit,reset, formState:{errors}} = useForm()
-  const formRef = useRef()
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const formRef = useRef();
 
-  const sendEmail = (formData, e) => {
-    
+  const sendEmail = () => {
     emailjs
       .sendForm(
         "service_8hxf061",
@@ -18,16 +23,17 @@ function ContactForm() {
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
+          toast.success("Message sent successfully");
+          reset();
         },
         function (err) {
-          console.log("FAILED...", err);
+          // console.log("FAILED...", err);
+          toast.error(`Error ${err.status}!,
+           Please contact me through other channels. `)
         }
-      );
-      reset()
-      e.preventDefault()
+      )
       
-    // return false;
-  }
+  };
   return (
     <section className="contact_form">
       <form onSubmit={handleSubmit(sendEmail)} id="form" ref={formRef}>
@@ -40,7 +46,6 @@ function ContactForm() {
             name="name"
             placeholder="Firstname Lastname"
             className="form_input"
-            // required
           />
           {errors.name && <p className="error_text">Name is required</p>}
         </div>
@@ -74,6 +79,7 @@ function ContactForm() {
             required
           />
         </div>
+
         <div className="form_button">
           <button type="submit" className="button button-primary">
             Send Message

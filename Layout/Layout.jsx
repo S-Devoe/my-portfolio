@@ -1,13 +1,15 @@
+import CustomCursor from "../components/CustomCursor";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-function Layout({children}) {
+function Layout({ children }) {
   return (
     <>
+     
       <Header />
       {children}
       <Footer />
     </>
   );
 }
-export default Layout
+export default Layout;

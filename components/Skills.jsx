@@ -1,5 +1,4 @@
 import skills from "../data/skills";
-import CodingLottie from "./CodingLottie";
 
 const Skills = () => {
   return (
