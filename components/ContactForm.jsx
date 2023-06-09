@@ -16,7 +16,7 @@ function ContactForm() {
     emailjs
       .sendForm(
         "service_8hxf061",
-        "template_chxap9",
+        "template_chxap9c",
         formRef.current,
         "CjIg6hpwylDIC1ppb"
       )
@@ -28,7 +28,7 @@ function ContactForm() {
         },
         function (err) {
           // console.log("FAILED...", err);
-          toast.error(`Error ${err.status}!,
+          toast.error(`Error ${err.status}!
            Please contact me through other channels. `)
         }
       )
