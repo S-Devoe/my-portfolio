@@ -8,6 +8,10 @@ const MyDocument = () => {
         <meta itemProp="name" content="DeeVoe" />
         <meta itemProp="name" content="Lagbalu lateef" />
         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta
           itemProp="description"
           content=" Lagbalu Lateef (DeeVoe) portfolio"
         />

@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
           position="top-right"
           reverseOrder={true}
           toastOptions={{
-            duration: 5000,
+            duration: 50000,
             style: {
               fontFamily: "Public Sans",
               backgroundColor: "#fafafa",
